@@ -1,0 +1,31 @@
+function factorial(num) {
+    let result = 1;
+    for (let i = 1; i <= num; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+function printMultiplicationTable(num) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} * ${i} = ${num * i}`);
+    }
+}
+
+function printPattern(rows) {
+    for (let i = 1; i <= rows; i++) {
+        let pattern = '';
+        for (let j = 1; j <= i; j++) {
+            pattern += '*';
+        }
+        console.log(pattern);
+    }
+}
+
+console.log("Factorial of 5:", factorial(5));
+
+console.log("Multiplication table of 7:");
+printMultiplicationTable(7);
+
+console.log("Pattern with 5 rows:");
+printPattern(5);
